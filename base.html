@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+{% load static %}
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>David</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- favicons
+    ================================================== -->
+    <!-- Favicon and Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/d_logo_white_on_black.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/d_logo_white_on_black.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/d_logo_white_on_black.png' %}">
+<link rel="manifest" href="{% static 'images/d_logo_white_on_black.png' %}">
+
+
+</head>
+
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+
+{% include 'include/header.html' %}
+    {% block content %}
+
+    {% endblock %}
+{% include 'include/footer.html' %}
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
